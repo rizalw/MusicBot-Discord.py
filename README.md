@@ -13,3 +13,10 @@ What's New:
 - Create stop feature
 - Create join feature
 - Create leave feature
+
+24/06/2021
+===
+What's New:
+- Create queue feature
+- Some minor optimization
+- Can listen to song either from youtube keyword or youtube link
