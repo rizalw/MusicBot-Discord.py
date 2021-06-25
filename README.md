@@ -20,3 +20,9 @@ What's New:
 - Create queue feature
 - Some minor optimization
 - Can listen to song either from youtube keyword or youtube link
+
+25/06/2021
+===
+What's New:
+- Several bug fixes
+- Minor optimization
