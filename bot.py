@@ -15,7 +15,7 @@ async def on_ready():
     # you should replace this with the location the
     # opus library is located in and with the proper filename.
     # note that on windows this DLL is automatically provided for you
-        discord.opus.load_opus('opus')
+        discord.opus.load_opus('/tmp/build_8ffb7c99/opus')
     print("We have logged in as {}".format(client.user))
 
 @client.command()
