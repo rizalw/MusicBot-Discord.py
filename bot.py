@@ -4,7 +4,7 @@ import os
 
 client = commands.Bot(command_prefix = "g!")
 
-Token = "ODU1MzU3MTYzNzUyNzgzODgz.YMxTbw.hG0m3oOMipZDrg5lXKv6WtjrlWQ"
+Token = "ODU1MzU3MTYzNzUyNzgzODgz.YMxTbw.0VPKrU9Pdt-h2PGjjfE1MywBgcw"
 
 @client.event
 async def on_ready():
