@@ -64,6 +64,7 @@ class music(commands.Cog):
         # print(voice_client.is_paused())
         if voice_client.is_paused() and len(url) == 0:
             voice_client.resume()
+            await ctx.send("Continue the song")
             return
         #Check whether the input is url or keyword
         html = self.check_link(url)
@@ -75,6 +76,7 @@ class music(commands.Cog):
             self.queue.append([ctx.message.guild, video_ids, int(ctx.message.channel.id)])
             song = pafy.new(video_ids[0])  # creates a new pafy object
             audio = song.getbest()  # gets an audio source
+            #executable = "E:/Software/ffmpeg-2021-06-19-git-2cf95f2dd9-essentials_build/ffmpeg-2021-06-19-git-2cf95f2dd9-essentials_build/bin/ffmpeg.exe"
             source = FFmpegPCMAudio(audio.url, **self.FFMPEG_OPTIONS)  # converts the youtube audio source into a source discord can use
             voice_client.play(source)  # play the source
         #ketika sudah ada isi  queue
@@ -97,11 +99,13 @@ class music(commands.Cog):
         if voice_client:
             if voice_client.is_playing():
                 voice_client.pause()
+                await ctx.send("The song has been paused")
     
     @commands.command(pass_context = True)
     async def skip(self, ctx):
         voice_client = discord.utils.get(self.client.voice_clients, guild=ctx.guild)
         voice_client.stop()
+        await ctx.send("The song has been skipped")
 
     @commands.command(pass_Context = True)
     async def queue(self, ctx):
