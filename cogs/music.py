@@ -133,7 +133,7 @@ class music(commands.Cog):
         if len(self.queue) == 0:
                 return
         voice_client = discord.utils.get(self.client.voice_clients, guild=self.queue[0][0])
-        if not voice_client.is_playing():
+        if not voice_client.is_playing() and not voice_client.is_paused():
             self.queue.pop(0)
             if len(self.queue) == 0:
                 return
