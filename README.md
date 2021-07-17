@@ -26,3 +26,10 @@ What's New:
 What's New:
 - Several bug fixes
 - Minor optimization
+
+17/07/2021
+===
+
+What's New:
+- Minor bug fixes
+- This app is deployable to Heroku
