@@ -143,7 +143,7 @@ class music(commands.Cog):
             await ctx.send("**Playing** https://www.youtube.com/watch?v=" + video_ids[0])
             song = pafy.new(video_ids[0])  # creates a new pafy object
             audio = song.getbest()  # gets an audio source
-            source = FFmpegPCMAudio(audio.url, executable = "E:/Software/ffmpeg-2021-06-19-git-2cf95f2dd9-essentials_build/ffmpeg-2021-06-19-git-2cf95f2dd9-essentials_build/bin/ffmpeg.exe", **self.FFMPEG_OPTIONS)  # converts the youtube audio source into a source discord can use
+            source = FFmpegPCMAudio(audio.url, **self.FFMPEG_OPTIONS)  # converts the youtube audio source into a source discord can use
             voice_client.play(source)  # play the source
 
 def setup(client):
