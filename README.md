@@ -4,6 +4,25 @@ Basicly a music bot, nothing else. Right now I'm using pafy library for getting 
 
 Changelog
 =
+17/07/2021
+===
+What's New:
+- Minor bug fixes
+- This app is deployable to Heroku
+
+25/06/2021
+===
+What's New:
+- Several bug fixes
+- Minor optimization
+
+24/06/2021
+===
+What's New:
+- Create queue feature
+- Some minor optimization
+- Can listen to song either from youtube keyword or youtube link
+
 23/06/2021
 ===
 What's New:
@@ -13,23 +32,3 @@ What's New:
 - Create stop feature
 - Create join feature
 - Create leave feature
-
-24/06/2021
-===
-What's New:
-- Create queue feature
-- Some minor optimization
-- Can listen to song either from youtube keyword or youtube link
-
-25/06/2021
-===
-What's New:
-- Several bug fixes
-- Minor optimization
-
-17/07/2021
-===
-
-What's New:
-- Minor bug fixes
-- This app is deployable to Heroku
